@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { connect, Dispatch } from 'react-redux';
+import { connect } from 'react-redux';
 import { RootState } from './store';
 import { Container, Grid, Header } from 'semantic-ui-react';
 import StoryList from './StoryList';
@@ -19,7 +19,6 @@ type StoriesProps = {
 };
 
 class Stories extends React.Component<StoriesProps, {}> {
-
   componentDidMount() {
     this.props.fetchStories();
   }
@@ -61,7 +60,7 @@ function mapStateToProps(state: RootState) {
   };
 }
 
-function mapDispatchToProps(dispatch: Dispatch<RootAction>) {
+function mapDispatchToProps(dispatch) {
   return {
     fetchStories: () => {
       dispatch(listStories());

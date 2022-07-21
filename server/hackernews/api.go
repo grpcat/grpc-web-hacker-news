@@ -11,13 +11,13 @@ import (
 )
 
 type Item struct {
-	Id    int32  `json:id`
-	Score int32  `json:score`
-	Title string `json:title`
-	By    string `json:by`
-	Time  int32  `json:time`
-	Url   string `json:url`
-	Type  string `json:type`
+	Id    int32  `json:"id"`
+	Score int32  `json:"score"`
+	Title string `json:"title"`
+	By    string `json:"by"`
+	Time  int32  `json:"time"`
+	Url   string `json:"url"`
+	Type  string `json:"type"`
 }
 
 type hackerNewsApi struct {

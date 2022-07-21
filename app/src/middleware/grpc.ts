@@ -1,4 +1,4 @@
-import { Action, Dispatch, Middleware, MiddlewareAPI } from 'redux';
+import { Action, Dispatch, Middleware, MiddlewareAPI } from 'react-redux';
 import { Code, grpc, Metadata, Transport } from 'grpc-web-client';
 import * as jspb from 'google-protobuf';
 

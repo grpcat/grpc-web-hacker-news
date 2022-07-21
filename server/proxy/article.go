@@ -1,8 +1,8 @@
 package proxy
 
 import (
-	"net/http"
 	"bufio"
+	"net/http"
 )
 
 func Article(w http.ResponseWriter, r *http.Request) {
